@@ -13,21 +13,21 @@ namespace ConsoleApp10
     {
         static void Main(string[] args)
         {
-            string FromMail = "thedotnetchannelsender22@gmail.com";
-            string FromPassword = "lgioehkvchemfkrw";
+            string FromMail = "********"; // Sender Mail
+            string FromPassword = "****"; // Password
 
             List<string> ToMailList = new List<string>()
             {
-                "heydermuxtar26@gmail.com",
-                "ayazdemirov123@gmail.com",
-                "demirovayaz7@gmail.com",
-                "anardemirov82@gmail.com"
-            };
+                "*****",
+                "*****",
+                "*******",
+                "******"
+            }; // Gmails that will receive mail
 
             MailMessage message = new MailMessage();
             message.From = new MailAddress(FromMail);
             message.Subject = "Test mail from workshop";
-            message.Body = "Test body from workshop from heyder";
+            message.Body = "Test body from workshop from somebody";
 
             SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
             smtpClient.Port = 587;
